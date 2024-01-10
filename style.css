@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    background-color: pink;
+    font-family: Arial, sans-serif;
+}
+
+#hearts {
+    /* Add your animation styles for hearts here */
+}
+
+h1 {
+    color: red;
+    margin-top: 50px;
+}
+
+#countdown {
+    margin-top: 20px;
+    font-size: 24px;
+    color: purple;
+}
