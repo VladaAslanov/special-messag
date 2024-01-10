@@ -1,30 +1,52 @@
-#hearts {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
+/* Set the background color and make the entire screen a flex container */
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: pink;
+    font-family: Arial, sans-serif;
 }
 
-#hearts::before,
-#hearts::after {
+/* Create the heart animation */
+.container .hearts::before,
+.container .hearts::after {
     content: '❤️';
     position: absolute;
     top: 0;
-    transform: scale(1);
-    animation: heartbeat 1s ease-in-out infinite;
+    transform: scale(1) translateX(-50%);
+    animation: heart-beat 1s ease-in-out infinite;
 }
 
-#hearts::after {
-    left: 50px;
+.container .hearts::after {
+    left: 50%;
 }
 
-@keyframes heartbeat {
+@keyframes heart-beat {
     0%, 100% {
-        transform: scale(1);
+        transform: scale(1) translateX(-50%);
         opacity: 1;
     }
     50% {
-        transform: scale(1.3);
+        transform: scale(1.3) translateX(-50%);
         opacity: 0;
     }
+}
+
+/* Center the text and countdown */
+.container .centered-text {
+    text-align: center;
+    color: red;
+}
+
+.container h1 {
+    font-size: 32px;
+}
+
+.container #countdown {
+    font-size: 24px;
+    color: purple;
+    margin-top: 10px;
 }
