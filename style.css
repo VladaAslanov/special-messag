@@ -44,12 +44,12 @@ body {
 
 .container h1 {
     font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .container #countdown {
     font-size: 24px;
     color: purple;
-    margin-top: 10px;
 }
 
 /* Style the countdown text */
