@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     const meetingTime = new Date('2024-01-11T11:30:00');
-    const countdownElement = document.getElementById('countdown');
     const timeElement = document.getElementById('time');
     
     function updateCountdown() {
@@ -18,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Check if the countdown is over
         if (diff <= 0) {
             clearInterval(interval);
-            countdownElement.innerText = "It's time!";
+            timeElement.innerText = "It's time!";
         }
     }
 
